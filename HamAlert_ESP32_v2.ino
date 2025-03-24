@@ -3,8 +3,8 @@
 #include <WiFi.h>
 
 // WiFi Credentials
-const char* ssid = "King House";
-const char* password = "toiletmot";
+const char* ssid = "your wifi name";  //enter your wifi name here
+const char* password = "your wifi password";  //enter your wifi password here
 
 // I2C LCD Configuration
 LiquidCrystal_I2C lcd(0x27, 20, 4);
@@ -12,9 +12,9 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);
 // HamAlert Telnet Configuration
 const char* telnetHost = "hamalert.org";
 const int telnetPort = 7300;
-const char* telnetUsername = "ZS6WAR";
-const char* telnetPassword = "jobjob";
-WiFiClient client;
+const char* telnetUsername = "your callsign";  //enter your HamAlert username, usually your callsign
+const char* telnetPassword = "your password";  //enter your HamAlert Password, usually defined in the phone app under telnet server password. 
+  WiFiClient client;
 
 // Struct for DX spots
 struct DXSpot {
